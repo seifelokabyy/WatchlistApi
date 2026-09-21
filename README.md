@@ -8,7 +8,7 @@ and is lost when the app restarts.
 ## Build and run
 
 ```bash
-cd WatchlistApi
+
 dotnet build
 dotnet run
 ```
@@ -152,8 +152,7 @@ watchlist is never modified while the calculation runs.
 
 ## Tools and resources used
 
-- .NET SDK and ASP.NET Core documentation (docs.microsoft.com / learn.microsoft.com).
-- Claude (Anthropic), an AI assistant, was used to help design and write
-  the initial version of this project's code and this README, based on
-  the assignment's requirements. All code was reviewed and can be
-  explained line by line.
+-* .NET SDK and ASP.NET Core documentation (docs.microsoft.com / learn.microsoft.com).
+* Claude (Anthropic), an AI assistant, was used to help design and write the initial version of this project's code and README.
+* ChatGPT (OpenAI), an AI assistant, was used during development to review the implementation, test the required API behavior, troubleshoot issues, and prepare the final submission.
+* All submitted code was reviewed and can be explained line by line.
