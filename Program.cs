@@ -4,9 +4,12 @@ using WatchlistApi.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IWatchlistStore, WatchlistStore>();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
+app.UseSwagger();
+app.UseSwaggerUI();
 // POST /watchlist-items - add a new watchlist item.
 app.MapPost("/watchlist-items", (CreateWatchlistItemRequest request, IWatchlistStore store) =>
 {
